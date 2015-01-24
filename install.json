@@ -1,0 +1,38 @@
+{
+  "resources": {
+    "head": [
+      {
+        "type": "script",
+        "src": "./helper.js"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+      "blocks": {
+        "title": "HTML Blocks to Add",
+        "order": 1,
+        "type": "array",
+        "items": {
+          "title": "Addition",
+          "type": "object",
+          "properties": {
+            "location": {
+              "title": "Location",
+              "description": "Where on the page would you like to add your elements?",
+              "type": "object",
+              "format": "element",
+              "order": 1
+            },
+            "code": {
+              "title": "HTML Code",
+              "type": "string",
+              "format": "textarea",
+              "order": 2
+            }
+          }
+        }
+      }
+    }
+  }
+}
