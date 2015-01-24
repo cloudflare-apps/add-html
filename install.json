@@ -11,10 +11,11 @@
     "properties": {
       "blocks": {
         "title": "HTML Blocks to Add",
+        "description": "You can also replace content on your page using the 'directly in the location' option of the 'Place the app' dropdown.",
         "order": 1,
         "type": "array",
         "items": {
-          "title": "Addition",
+          "title": "HTML Block",
           "type": "object",
           "properties": {
             "location": {
