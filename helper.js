@@ -7,7 +7,7 @@
     for (var i=0; i < options.blocks.length; i++) {
       var el = Eager.createElement(options.blocks[i].location);
 
-      el.innerHTML = options.blocks[i].code;
+      el.innerHTML = options.blocks[i].code || '';
 
       var scripts = el.querySelectorAll('script');
       if (scripts){
