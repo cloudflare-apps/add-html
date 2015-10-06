@@ -28,7 +28,7 @@
             "code": {
               "title": "HTML Code",
               "type": "string",
-              "format": "textarea",
+              "format": "code",
               "order": 2
             }
           }
