@@ -7,7 +7,7 @@
   var prevElements = {};
 
   var add = function(){
-    for (var i=0; i < options.blocks.length; i++) {
+    for (var i = 0; i < options.blocks.length; i++) {
       var block = options.blocks[i];
       var locationHash = block.location.selector + "!" + block.location.method;
 
@@ -26,10 +26,10 @@
       el.innerHTML = block.code;
 
       var scripts = el.querySelectorAll('script');
-      if (scripts){
-        for (var j=0; j < scripts.length; j++){
+      if (scripts) {
+        for (var j = 0; j < scripts.length; j++) {
           var newScript = document.createElement('script');
-          for (var k=scripts[j].attributes.length; k--;){
+          for (var k = scripts[j].attributes.length; k--;) {
               var attr = scripts[j].attributes[k];
 
               if (attr.specified)
@@ -57,7 +57,7 @@
         delete elements[hash].foundInBlocks;
       }
     }
-  }
+  };
 
   var setOptions = function(opts){
     options = opts;
@@ -73,4 +73,4 @@
   window.EagerAddHTML = {
     setOptions: setOptions
   }
-})()
+})();
