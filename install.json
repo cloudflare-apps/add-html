@@ -7,6 +7,14 @@
       }
     ]
   },
+  "preview": {
+    "handlers": [
+      {
+        "options": ["*"],
+        "execute": "EagerAddHTML.setOptions(INSTALL_OPTIONS)"
+      }
+    ]
+  },
   "options": {
     "properties": {
       "blocks": {
