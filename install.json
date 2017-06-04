@@ -3,7 +3,7 @@
     "head": [
       {
         "type": "script",
-        "src": "./helper.js"
+        "src": "./source/app.js"
       }
     ]
   },
@@ -11,17 +11,32 @@
     "handlers": [
       {
         "options": ["*"],
-        "execute": "EagerAddHTML.setOptions(INSTALL_OPTIONS)"
+        "execute": "INSTALL_SCOPE.setOptions(INSTALL_OPTIONS)"
       }
     ]
   },
   "options": {
     "properties": {
       "blocks": {
-        "title": "HTML Blocks to Add",
-        "description": "You can also replace content on your page using the 'directly in the location' option of the 'Place the app' dropdown.",
+        "title": "HTML Blocks",
         "order": 1,
         "type": "array",
+        "default": [
+          {
+            "code": "",
+            "location": {
+              "method": "append",
+              "selector": "head"
+            }
+          },
+          {
+            "code": "",
+            "location": {
+              "method": "append",
+              "selector": "body"
+            }
+          }
+        ],
         "items": {
           "title": "HTML Block",
           "type": "object",
@@ -35,6 +50,7 @@
             },
             "code": {
               "title": "HTML Code",
+              "placeholder": "<script>, <iframe>, etc...",
               "type": "string",
               "format": "code",
               "order": 2
