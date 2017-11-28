@@ -1,5 +1,5 @@
 {
-  "name": "cloudflare-app-add-html",
+  "name": "@cloudflare-apps/add-html",
   "version": "0.0.0",
   "description": "",
   "main": "app.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CloudflareApps/AddHTML.git"
+    "url": "git+https://github.com/cloudflare-apps/add-html.git"
   },
   "author": "Cloudflare Inc.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/CloudflareApps/AddHTML/issues"
+    "url": "https://github.com/cloudflare-apps/add-html/issues"
   },
-  "homepage": "https://github.com/CloudflareApps/AddHTML#readme",
+  "homepage": "https://github.com/cloudflare-apps/add-html#readme",
   "dependencies": {},
   "devDependencies": {
     "standard": "^9.0.2"
