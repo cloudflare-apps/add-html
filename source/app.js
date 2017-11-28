@@ -26,7 +26,7 @@
       element.foundInBlocks = true
       element.innerHTML = block.code
 
-      var scripts = element.querySelectorAll('script')
+      var scripts = Array.prototype.slice.call(element.querySelectorAll('script'))
 
       if (scripts) {
         scripts.forEach(function (script) {
