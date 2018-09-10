@@ -6,6 +6,7 @@
   var options = INSTALL_OPTIONS
   var elements = {}
   var prevElements = {}
+  var initialized = false;
 
   function updateElements () {
     options.blocks.forEach(function (block, index) {
@@ -64,7 +65,13 @@
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', updateElements)
+    document.addEventListener('DOMContentLoaded', function() {
+      if(initialized == false) {
+        // Only allow the elements to react to DOMContentLoaded one time to prevent issues with rocket loader
+        initialized = true;
+        updateElements();
+      }
+    })
   } else {
     updateElements()
   }
